@@ -1,7 +1,7 @@
 Payment Form Validation
 
 A simple payment form built using HTML, CSS, and JavaScript that validates user inputs before submitting to a server. The form collects the following information:
-
+ 
 . Username
 . Card Number
 . Expiration Date
