@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../font/Roboto-Regular.woff) format("woff");
+}
+body {
+    text-align: center;
+    background-color: #82CCDD;
+}
+
+.form {
+    display: grid;
+    background-color: #ffffff;
+    width: 330px;
+    min-height: 527px;
+    margin: auto;
+    margin-top: 102px;
+    padding: 1px 15px 15px 15px;
+    border-radius: 20px;
+    font-family: Roboto;
+}
+
+.form-header {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23.44px;
+}
+
+.exDate-cvv {
+    display: flex;
+    gap: 10px;
+    width: 300px;
+    margin: auto;
+}
+
+.form label {
+    text-align: start;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px !important;
+}
+input{
+    border: none;
+    background-color: #E2E6EE;
+    padding: 12px 14px;
+    border-radius: 10px;
+}
+
+.name-box , .cardNum-box , .pass-box {
+    display: grid;
+    gap: 10px;
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+
+}
+.cardNum-box {
+    position: relative;
+}
+
+.exp-date, .cvv {
+    display: grid;
+    gap: 10px;
+    margin-top: 20px;
+}
+.cvv {
+    position: relative;
+}
+.cvv input{
+    width: 117px;
+}
+.exp-date input {
+    width: 117px;
+}
+.icon {
+    position: absolute;
+    font-size: 16px;
+     top: 71%;
+     right: 15px;
+     color: #939cb0;
+     transform: translateY(-50%);
+
+}
+
+.form-btn {
+    background-color: #288FB4;
+    padding: 12px 24px;
+    color: white;
+    font-size: 14px;
+    border-radius: 10px;
+    width: 300px;
+    border: none;
+    margin: auto;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: #9EA8BD;
+}
+
+form p {
+    font-size: 12px;
+    opacity: .7;
+}
+
+.validtxt , .inValidtxt{
+    display: none;
+}
+
+#err, #success , #err2, #success2, #err3, #success3, #err4, #success4{
+    display: none;
+}

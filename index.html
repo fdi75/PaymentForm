@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment page</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="form-container">
+      <form action="" name="payment-form" class="form" onsubmit="return false;">
+        <h5 class="form-header">Payment info</h5>
+
+        <div class="name-box">
+          <label for="name-inp">Full Name</label>
+          <input
+            type="text"
+            id="name-inp"
+            oninput="validName()"
+            placeholder="Alex Smith or..."
+          />
+          <p class="inValidtxt">Invalid Name ❌</p>
+          <p class="validtxt">Your name is valid ✅</p>
+        </div>
+
+        <div class="cardNum-box">
+          <label for="card-number">Credit Card Number</label>
+          <input
+            type="text"
+            id="card-number"
+            oninput="validCardNum()"
+            placeholder="1234 1234 1234 1234"
+          />
+          <i class="fa-solid fa-credit-card icon"></i>
+          <p id="err">Invalid Card number ❌</p>
+          <p id="success">Your Card number is valid ✅</p>
+        </div>
+
+        <div class="exDate-cvv">
+          <div class="exp-date">
+            <label for="exp-date">Exp Date</label>
+            <input
+              type="text"
+              id="exp-date"
+              oninput="validDate()"
+              placeholder="MM/YY"
+              value=""
+            />
+          </div>
+          <div class="cvv">
+            <label for="cvv">CVV</label>
+            <input type="password" id="cvv" oninput="validCvv()" placeholder="***" />
+            <i class="fa-regular fa-clock icon"></i>
+          </div>
+        </div>
+        <div>
+          <p id="err2">Invalid exp card date ❌</p>
+          <p id="success2">Valid date ✅</p>
+        </div>
+        <div>
+          <p id="err3">Invalid cvv ❌</p>
+          <p id="success3">Your pass is valid ✅</p>
+        </div>
+        <div class="pass-box">
+          <label for="z-code">Zip Code</label>
+          <input type="password" oninput="validPass()" id="z-code" />
+          <p id="err4">Invalid password ❌</p>
+          <p id="success4">Your pass is valid ✅</p>
+        </div>
+
+        <button type="submit" class="form-btn">Confirm Payment</button>
+        <p>You verify that this info is correct</p>
+      </form>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
